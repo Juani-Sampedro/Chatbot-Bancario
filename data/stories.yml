@@ -1,0 +1,45 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: afirmar
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: negar
+  - action: utter_goodbye
+
+- story: sacar_tarjetadecredito_story
+  steps:
+  - intent: sacar_tarjetadecredito
+  - action: utter_sos_cliente
+  - intent: respuesta_cliente
+  - action: action_tarjeta_de_credito
+
+- story: sacar_cajadeahorro_story
+  steps:
+  - intent: sacar_cajadeahorro
+  - action: utter_sos_cliente
+  - intent: respuesta_cliente
+  - action: action_caja_de_ahorro
+
