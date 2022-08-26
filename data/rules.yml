@@ -2,10 +2,15 @@ version: "3.1"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Despedirse cada vez que lo saludan
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - intent: adios
+  - action: utter_adios
+
+- rule: Decir de nada despues de que agradecen
+  steps:
+  - intent: gracias
+  - action: utter_nohaydeque
 
 - rule: Say 'I am a bot' anytime the user challenges
   steps:

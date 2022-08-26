@@ -2,7 +2,8 @@ version: "3.1"
 
 intents:
   - greet
-  - goodbye
+  - adios
+  - gracias
   - afirmar
   - negar
   - mood_great
@@ -30,14 +31,18 @@ responses:
   utter_happy:
   - text: "Great, carry on!"
 
-  utter_goodbye:
-  - text: "Bye"
+  utter_adios:
+  - text: "Nos vemos luego!"
+
+  utter_nohaydeque:
+  - text: "No hay de que!"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
   
   utter_sos_cliente:
   - text: "Ya sos cliente?"
+
 
 session_config:
   session_expiration_time: 60

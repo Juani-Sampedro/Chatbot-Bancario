@@ -17,18 +17,17 @@ nlu:
     - goodevening
     - good afternoon
 
-- intent: goodbye
+- intent: adios
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
+    - adios
+    - chau
+    - hasta luego
+    - buenas noches
     - bye
-    - goodbye
-    - have a nice day
-    - see you around
+    - nos vemos
+    - que tengas un lindo dia
+    - nos vemos pronto
     - bye bye
-    - see you later
 
 - intent: afirmar
   examples: |
@@ -100,6 +99,14 @@ nlu:
     - quiero obtener una tarjeta de credito
     - quiero sacar una tarjeta de credito
 
+- intent: sacar_cajadeahorro
+  examples: |
+    - como abro una caja de ahorro?
+    - quiero abrir una caja de ahorro
+    - necesito abrir una caja de ahorro
+    - por favor quiero abrir una caja de ahorro
+    - por favor necesito abrir una caja de ahorro
+
 - intent: respuesta_cliente
   examples: |
     - si obvio
@@ -107,3 +114,11 @@ nlu:
     - no
     - no lo soy
     - no aun 
+
+- intent: gracias
+  examples: |
+    - gracias
+    - te agradezco
+    - gracias por la ayuda
+    - me sirve
+    - perfecto, gracias
