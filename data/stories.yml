@@ -35,8 +35,7 @@ stories:
   - action: utter_sos_cliente
   - intent: respuesta_cliente
   - action: action_tarjeta_de_credito
-  - intent: gracias
-  - intent: adios
+
 
 - story: sacar_cajadeahorro_story
   steps:
@@ -44,6 +43,5 @@ stories:
   - action: utter_sos_cliente
   - intent: respuesta_cliente
   - action: action_caja_de_ahorro
-  - intent: gracias
-  - intent: adios
+
 
